@@ -68,9 +68,9 @@ App Deployment Repository : [github.com/yanfa121/Bank_Deposit_Predictor](https:/
 
 App Link : [Bank Deposit Predictor (Streamlit)](https://bankdepositpredictorapp-yanfa121.streamlit.app/)
 
-Explanation Video : [Video Explanation]()
+Explanation Video : [Video Explanation](https://drive.google.com/file/d/1wgLVkhoHFC-g_27j9-Nu9fI5AH149ZkQ/view?usp=drive_link)
 
-GDrive : [Link GDrive]()
+GDrive : [Link GDrive](https://drive.google.com/drive/folders/1Xe9N1hDM9JYdt5rcJP7zOZuyccdfJz7P?usp=sharing)
 
 
 ## **7. Conclusion & Recommendation**
