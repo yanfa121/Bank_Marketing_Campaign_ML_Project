@@ -5,7 +5,7 @@
 
 ### **Business Understanding**
 Sebuah perusahaan perbankan melakukan kampanye pemasaran untuk menawarkan berbagai produk keuangan salah satunya deposito. 
-Untuk meningkatkan penjualan produk tersebut Bank melakukan kampanye pemasaran melalui kontak langsung kenasabah via telepon dan pesan, untuk mendapatkan nasabah baru.
+Untuk meningkatkan penjualan produk tersebut Bank melakukan kampanye pemasaran melalui kontak langsung kenasabah via telepon, untuk mendapatkan nasabah baru.
 
 Namun upaya upaya tesebut juga harus kita perhatikan untuk cost dan benefitnya, agar lebih efisien dan tepat sasaran maka diperlukan model Machine Learning
 untuk memprediksi kandidat nasabah yang kemungkinan akan menggunakan produk ini dan melakukan deposito.
@@ -52,7 +52,7 @@ Proses pengerjaan project ini menggunakan libraries dengan versi tertentu:
 │   |__ gridsearchtune13.hyp                  <- Saved best tuning for model
 │
 ├── Reports
-│   ├── Link_Video.txt                        <- Link video explanation
+│   ├── Link_Video_Explanation.txt            <- Link video explanation
 │   |__ Bank_Marketing_Campaign_PPT.pdf       <- Slide explanation
 │
 |__ Streamlit
