@@ -47,6 +47,7 @@ Proses pengerjaan project ini menggunakan libraries dengan versi tertentu:
 ├── README.md                                 <- Guideline and overview of the entire project
 ├── Models
 │   ├── Bank_Marketing_Campaign_ML.ipynb      <- Notebook for building this model
+│   ├── bestmodel.mdl                         <- Saved model pipeline
 │   ├── data_bank_marketing_campaign.csv      <- Raw data
 │   |__ gridsearchtune13.hyp                  <- Saved best tuning for model
 │
