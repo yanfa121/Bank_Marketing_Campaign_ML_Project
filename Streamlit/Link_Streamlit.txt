@@ -1,4 +1,0 @@
-Link Streamlit :
-
-https://bankdepositpredictorapp-yanfa121.streamlit.app/
-
