@@ -4,26 +4,25 @@
 ## **1. Project Overview**
 
 ### **Business Understanding**
-Sebuah perusahaan perbankan melakukan kampanye pemasaran untuk menawarkan berbagai produk keuangan salah satunya deposito. 
-Untuk meningkatkan penjualan produk tersebut Bank melakukan kampanye pemasaran melalui kontak langsung kenasabah via telepon, untuk mendapatkan nasabah baru.
+A banking company conducted a marketing campaign to offer various financial products, including deposit products.
+To increase product sales, the bank carried out direct marketing campaigns by contacting customers via phone to acquire new deposit customers.
 
-Namun upaya upaya tesebut juga harus kita perhatikan untuk cost dan benefitnya, agar lebih efisien dan tepat sasaran maka diperlukan model Machine Learning
-untuk memprediksi kandidat nasabah yang kemungkinan akan menggunakan produk ini dan melakukan deposito.
+However, these efforts must also be evaluated in terms of cost and benefits. To ensure efficiency and better targeting, a Machine Learning model is needed to predict potential customers who are likely to subscribe to deposit products.
 
 ### **Analytical Approach**
-Dengan data yang telah dimiliki, dapat digunakan untuk membuat model prediksi kandidat nasabah yang akan menggunakan produk hingga melakukan deposito, dengan membangun model klasifikasi. Dengan tujuan :
-- Campaign Program yang lebih efisien dan tepat sasaran
-- Meningkatkan efektivitas Campaign Program dengan cara menargetkan nasabah yang memiliki kemungkinan tinggi untuk menggunakan produk hingga melakukan deposito
-- Mengoptimalkan budget yang diberikan untuk Campaign Program ini
-- Meminimalisir biaya operasional dengan mengurangi jumlah panggilan yang tidak tepat sasaran
+Using the available data, a predictive model was developed to identify potential customers who are likely to subscribe to deposit products by building a classification model. The objectives are:
+- To create a more efficient and targeted campaign program
+- To improve campaign effectiveness by targeting customers with a high probability of subscribing to deposit products
+- To optimize the campaign budget
+- To minimize operational costs by reducing irrelevant or ineffective calls
 
 
 ## **2. Data**
-Data yang digunakan adalah dataset dari UCI Machine Learning Repository
+The dataset used in this project was obtained from the UCI Machine Learning Repository :
 - data_bank_marketing_campaign.csv
 
 
-## **3. Tools yang Digunakan**
+## **3. Tools Used**
 - Microsoft Visual Studio Code, Jupyter Notebook, Google Colab
 - Programming Language : Python (Pandas, Numpy, Scikit-learn)
 - Visualization        : Seaborn, Matplotlib
@@ -32,7 +31,7 @@ Data yang digunakan adalah dataset dari UCI Machine Learning Repository
 
 
 ## **4. Prerequisites**
-Proses pengerjaan project ini menggunakan libraries dengan versi tertentu:
+This project was developed using the following library versions :
 - Python 3.13.5
 - NumPy 2.2.0
 - Pandas 2.2.3
@@ -75,32 +74,33 @@ GDrive : [Link GDrive](https://drive.google.com/drive/folders/1Xe9N1hDM9JYdt5rcJ
 
 ## **7. Conclusion & Recommendation**
 ### **Conclusion**
-Model akhir yang digunakan adalah LGBM (Light Gradient Boosting Machine) yang telah dilakukan tuning. Berdasarkan hasil akhir model yang dibandingkan dengan model sebelum tuning dan optimasi threshold, model ini dioptimasi untuk memaksimalkan recall kelas 1.
+The final model used in this project is LGBM (Light Gradient Boosting Machine) with hyperparameter tuning. Based on the final evaluation and comparison with pre tuning models and threshold optimization, the model was optimized to maximize recall for the positive class (class 1).
 
-Yang artinya dengan model ini kita lebih memilih tidak melewatkan calon nasabah meskipun dengan resiko False Positive (salah mengontak orang yang akhirnya tidak deposit), karena meski demikian, biaya kehilangan nasabah potensial lebih besar daripada biaya menawarkan ke orang yang tidak tertarik.
+This means the model prioritizes not missing potential customers, even at the risk of producing false positives (contacting customers who ultimately do not subscribe to deposits). This approach is chosen because the cost of losing potential customers is considered higher than the cost of contacting uninterested customers.
 
-Dengan penggunaan model ini, Bank bisa meningkatkan efektivitas karyawan, menghemat waktu, meminimalisir biaya yang dikeluarkan dan juga menambah profit walaupun hanya sedikit lebih baik dari semua prediksi menjadi 1 (semua nasabah ditelepon). Tetapi penggunaan model akan lebih membantu dalam penghematan waktu, tenaga dan juga biaya.
+By implementing this model, the bank can improve employee productivity, save time, reduce operational costs, and increase profit. Although the performance improvement is only slightly better than a naive approach of predicting all customers as positive (calling everyone), the model significantly helps in optimizing time, effort, and operational efficiency.
 
 ### **Recommendation**
-1. Rekomendasi Bisnis
-- Fokus untuk melakukan telepon kepada nasabah dengan probabilitas tinggi
-- Buat segmentasi perlakuan nasabah, contoh :
-    - Probabilitas Tinggi : telepon langsung
-    - Probabilitas sedang : hubungi melalui email atau WA (lebih murah)
-    - Probabilitas Rendah : bisa dipertimbangkan untuk tidak perlu dihubungi
-- Melakukan evaluasi biaya secara berkala untuk memastikan model yang digunakan dapat memberikan keuntungan yang optimal, dengan menyesuaikan threshold berdasarkan perubahan biaya yang ada supaya  
+1. Business Recommendations
+- Focus outreach efforts on customers with high predicted probabilities
+- Apply customer treatment segmentation, for example:
+    - High probability: direct phone calls
+    - Medium probability: contact via email or WhatsApp (lower cost)
+    - Low probability: consider not contacting
+- Conduct regular cost evaluations to ensure the model continues to deliver optimal value, adjusting the decision threshold according to changing cost structures
 
-2. Meningkatkan Performa Model
-- Untuk meningkatkan performa model agar lebih baik bisa menambah beberapa fitur seperti Gaji, Jumlah Deposit yang sudah ada
-- Menjelaskan nilai *unknown* lebih spesifik agar lebih reasonable dan bisa dijadikan treatment yang lebih tepat
-- Update model dengan data terbaru di setiap batch Campaign Program, perubahan dalam data bisa mempengaruhi kinerja model. Dengan pemantuan berkala, model lebih bisa menyesuaikan dengan variasi data yang beragam
+2. Model Performance Improvement
+- Enhance model performance by adding more features, such as income and existing deposit amounts
+- Provide a more detailed explanation of unknown values to make them more interpretable and actionable
+- Continuously update the model with the latest campaign data, as data distribution changes can affect model performance. Regular monitoring helps the model adapt to evolving data patterns
 
-### **Harapan**
-Dengan pembuatan model ini diharapkan Bank dapat mengoptimalkan Campaign Program dengan lebih cepat, efektif dan efisien
-- Mengoptimalkan campaign program dengan target nasabah yang lebih terfokus sehingga mengurangi kontak yang tidak efektif
-- Meminimalisir waktu dan tenaga tim marketing/telemarketing karena upaya diarahkan pada calon nasabah dengan probabilitas tinggi untuk membuka deposito
-- Mengurangi biaya operasional (seperti biaya telepon dan sumber daya lainnya) sehingga anggaran dapat dialokasikan lebih efisien
-- Meningkatkan keuntungan jangka pendek maupun jangka panjang, tidak hanya dengan menekan False Positive (nasabah yang ditelepon tapi tidak deposit), tetapi juga dengan mengurangi False Negative (kehilangan nasabah yang potensial)
+
+### Expected Impact
+With the implementation of this model, the bank is expected to optimize marketing campaigns more effectively, efficiently, and strategically:
+- Improve campaign targeting by focusing on high-probability customers, reducing ineffective contacts
+- Minimize time and effort spent by marketing and telemarketing teams by prioritizing high-potential customers
+- Reduce operational costs (e.g., call costs and resource allocation), enabling more efficient budget utilization
+- Increase short-term and long-term profitability, not only by reducing false positives (contacting uninterested customers) but also by minimizing false negatives (losing potential customers)
 
 
 ## **8. Contact**
